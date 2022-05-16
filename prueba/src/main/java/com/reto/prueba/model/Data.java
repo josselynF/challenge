@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Data {
     private Integer id;
-    private String lastname;
+    private String last_name;
     private String email;
     private String first_name;
     private String avatar;
@@ -28,7 +28,7 @@ public class Data {
 
     public Data(Integer id, String lastname, String email, String first_name, String avatar){
         this.id = id;
-        this.lastname = lastname;
+        this.last_name = lastname;
         this.email = email;
         this.first_name = first_name;
         this.avatar = avatar;
@@ -46,12 +46,12 @@ public class Data {
         this.id = id;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLast_name() {
+        return last_name;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
     }
 
     public String getEmail() {

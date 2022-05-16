@@ -9,8 +9,22 @@ public class User {
     LocalDateTime operationDate;
     Data data[];
 
+    public User(LocalDateTime fecha, Data[] data) {
+        this.operationDate = fecha;
+        this.data = data;
+    }
+
+    public User(Data[] data) {
+        this.operationDate = LocalDateTime.now();
+        this.data = data;
+    }
+
+    public User() {
+        this.operationDate = LocalDateTime.now();
+    }
+
     public LocalDateTime getOperationDate() {
-        return operationDate = LocalDateTime.now();
+        return operationDate;
     }
 
     public void setOperationDate(LocalDateTime operationDate) {
