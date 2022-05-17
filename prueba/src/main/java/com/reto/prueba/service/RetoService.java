@@ -1,7 +1,7 @@
 package com.reto.prueba.service;
 
-import org.springframework.stereotype.Service;
+import com.reto.prueba.model.User;
 
-@Service
 public interface RetoService {
+    User convertir();
 }
